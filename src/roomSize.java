@@ -3,15 +3,19 @@ import java.util.Scanner;
 public class roomSize {
 
 	public static void main(String[] args) {
+		
 		double length;
 		double width;
 		double height;
 		String input = "y";
+		
+		/*move the greeting outside of the loop so that it doesn't 
+		 prompt every time the user continutes 
+		 */
+		System.out.println("Welcome to Grand Circus' Room Detail Generator!"); 
 
-		while (input.equalsIgnoreCase("y")) {
+		while (input.equalsIgnoreCase("y")) { // this will ignore the case of the letter the user enters 
 
-			System.out.println("Welcome to Grand Circus' Room Detail Generator!");
-			
 			Scanner calc = new Scanner(System.in);
 			System.out.println("Enter Length Here: ");
 			length = calc.nextDouble();
